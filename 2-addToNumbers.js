@@ -13,19 +13,6 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
-function ListNode({val, next}) {
-    this.val = val;
-    this.next = next;
-}
-
-let a1 = new ListNode({val: 3, next: null});
-let a2 = new ListNode({val: 4, next: a1});
-let a3 = new ListNode({val: 2, next: a2});
-
-var b1 = new ListNode({val: 4, next: null});
-var b2 = new ListNode({val: 6, next: b1});
-var b3 = new ListNode({val: 5, next: b2});
-
 var addTwoNumbers = function (l1, l2) {
     let result = [];
     let result1 = [];
@@ -83,5 +70,18 @@ var addTwoNumbers = function (l1, l2) {
     return result;
 };
 
+
+function ListNode({val, next}) {
+    this.val = val;
+    this.next = next;
+}
+
+let a1 = new ListNode({val: 3, next: null});
+let a2 = new ListNode({val: 4, next: a1});
+let a3 = new ListNode({val: 2, next: a2});
+
+var b1 = new ListNode({val: 4, next: null});
+var b2 = new ListNode({val: 6, next: b1});
+var b3 = new ListNode({val: 5, next: b2});
 
 console.log(addTwoNumbers(a3, b3));
